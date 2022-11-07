@@ -1,0 +1,42 @@
+body,html{
+    margin:0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+
+.conta{
+
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.st{
+
+    border-radius: 10px;
+
+}
+
+.sh{
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.text{
+
+    font-family: cursive;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.par{
+
+    font-family: cursive;
+    font-style: italic;
+    color: rgb(153, 152, 151);
+    text-align: justify;
+}
