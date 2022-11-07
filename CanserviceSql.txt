@@ -1,0 +1,36 @@
+create database CabManagement;
+   use CabManagement;
+   create table  cab(
+    regNo int primary key,
+    cabType varchar(50) not null,
+    driverid int
+    );
+    create table userRegister(
+       userName varchar(50) primary key ,
+       pass varchar(50) not null unique,
+       email varchar(50) not null unique,
+       address varchar(50) not null,
+       phoneNo int not null unique
+	);
+    create table driver(
+       driverid int primary key,
+       licenseNo varchar(50),
+       name varchar(50),
+       dob date
+	);
+    create table booking(
+      userName varchar(50),
+      bookingId int primary key,
+      driverId varchar(50),
+      bookingDate date,
+      LocationFrom real,
+      LocationTo real,
+      fare int
+      );
+	desc cab;
+    desc userRegister;
+    desc driver;
+    desc booking;
+    alter table cab add constraint FK_driverid foreign key(driverid) references driver(driverid);
+    alter table booking add constraint FK_username foreign key(userName) references userRegister(userName);
+      
